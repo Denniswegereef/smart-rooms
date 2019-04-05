@@ -1,0 +1,31 @@
+<nav>
+  {{> main-logo }}
+
+  {{> filter}}
+</nav>
+{{> current-time }}
+<div class="room-list">
+  {{#each filteredData}}
+  <div aria-label="card of meetingroom named,  {{this.roomName}}" class="room-list__card">
+    <div class="room-list__two-collumn">
+      <form action="/subscribe" class="subscribe-form">
+        <label for="room{{@index}}">Notify when available</label>
+        <input type="checkbox" id="room{{@index}}" value="{{this.roomName}}">
+      </form>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 535.47 293.19">
+        {{> svgStyle }}
+        {{> background }}
+        {{> chairs}}
+        {{> occupation }}
+        {{> desk }}
+        {{> lighting}}
+      </svg>
+      <div class="room-list__visual-data">
+        {{> card-info }}
+      </div>
+    </div>
+    <!-- <a href="room/{{ this.roomName }}" class="room-list__button" type="button" name="button">{{ this.roomName }}</a> -->
+  </div>
+  {{/each}}
+</div>

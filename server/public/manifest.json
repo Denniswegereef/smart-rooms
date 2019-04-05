@@ -1,0 +1,20 @@
+{
+  "name": "Mirabeau meeting rooms",
+  "short_name": "Mirabeau_meeting_rooms",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simply meeting room",
+  "icons": [
+    {
+      "src": "images/mirabeau-logo-transparent.svg",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+    }
+  ]
+}

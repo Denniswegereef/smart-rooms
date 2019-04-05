@@ -1,0 +1,443 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Brando Sans Text';
+  src: url("/font/BrandoSans-Text.woff2") format("woff2"), url("/font/BrandoSans-Text.woff") format("woff"), url("/font/BrandoSans-Text.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brando Sans';
+  src: url("/font/BrandoSans-Light.woff2") format("woff2"), url("/font/BrandoSans-Light.woff") format("woff"), url("/font/BrandoSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Brando Sans';
+  src: url("/font/BrandoSans-SemiBold.woff2") format("woff2"), url("/font/BrandoSans-SemiBold.woff") format("woff"), url("/font/BrandoSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+a {
+  font-family: 'Brando Sans';
+  font-weight: 500; }
+
+body {
+  margin: 0;
+  background: #555970;
+  background: -moz-linear-gradient(top, #555970 0%, #323449 100%);
+  background: -webkit-linear-gradient(top, #555970 0%, #323449 100%);
+  background: linear-gradient(to bottom, #555970 0%, #323449 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555970', endColorstr='#323449',GradientType=0 );
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-bottom: 32px;
+  font-family: 'Brando Sans Text';
+  font-weight: 300; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Brando Sans';
+  font-weight: 600; }
+
+h1 {
+  display: block;
+  font-size: 2rem;
+  font-size: 32px;
+  margin-top: 0.4rem;
+  margin-top: 6.4px;
+  margin-bottom: 0.4rem;
+  margin-bottom: 6.4px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold; }
+
+h2 {
+  display: block;
+  font-size: 1.5rem;
+  font-size: 24px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold; }
+
+h3 {
+  display: block;
+  font-size: 1.17rem;
+  font-size: 18.72px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold; }
+
+h4 {
+  display: block;
+  font-size: 1rem;
+  font-size: 16px;
+  margin-top: 1.33rem;
+  margin-top: 21.28px;
+  margin-bottom: 1.33rem;
+  margin-bottom: 21.28px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold; }
+
+h5 {
+  display: block;
+  font-size: 0.83rem;
+  font-size: 13.28px;
+  margin-top: 1.67rem;
+  margin-top: 26.72px;
+  margin-bottom: 1.67rem;
+  margin-bottom: 26.72px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold; }
+
+h6 {
+  display: block;
+  font-size: 0.67rem;
+  font-size: 10.72px;
+  margin-top: 2.33rem;
+  margin-top: 37.28px;
+  margin-bottom: 2.33rem;
+  margin-bottom: 37.28px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold; }
+
+p {
+  font-family: 'Brando Sans';
+  font-weight: 500; }
+
+a {
+  text-decoration: none; }
+
+button {
+  font-family: 'Brando Sans'; }
+
+nav {
+  padding: 1rem 1rem;
+  padding: 16px 16px;
+  display: block; }
+
+@supports (display: grid) {
+  .room-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    grid-row-gap: 16px;
+    grid-column-gap: 1rem;
+    grid-column-gap: 16px; } }
+
+@supports not (display: grid) {
+  .room-list {
+    display: inline-block; } }
+
+@supports (display: flex) {
+  .room-list__info {
+    display: flex;
+    justify-content: center; }
+  .room-list__icon-free {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .room-list__icon-next {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+
+@supports not (display: flex) {
+  .room-list__info {
+    display: inline-block; }
+  .room-list__icon-free {
+    display: inline-block; }
+  .room-list__icon-next {
+    display: block; } }
+
+.button {
+  border: none;
+  font-size: 16px;
+  background-color: #352168;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  padding: 8px 16px;
+  margin-left: 0.5rem;
+  margin-left: 8px; }
+
+.room-filter {
+  margin-top: 1rem;
+  margin-top: 16px; }
+
+.light {
+  opacity: 0.8;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)'; }
+
+.stronger {
+  opacity: 0.3;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)'; }
+
+.room-list__button {
+  display: inline-block;
+  border: none;
+  padding: 0.9rem;
+  padding: 14.4px;
+  width: 100%;
+  background-color: #857fc2;
+  color: #fff; }
+
+.room-list__card {
+  display: inline-block;
+  margin: 0 1.5rem 1rem;
+  margin: 0 24px 16px;
+  -webkit-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.36); }
+
+.room-list__visual-data {
+  background-color: #130923;
+  margin-top: -4px;
+  color: #fff;
+  padding: 0.4rem 0rem;
+  padding: 6.4px 0; }
+  .room-list__visual-data p {
+    display: inline-block; }
+
+.room-list__info svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.1rem;
+  margin-right: 1.6px; }
+
+.room-list__icon-next {
+  margin-right: 0.6rem;
+  margin-right: 9.6px;
+  background-color: #352168;
+  padding: 0.3rem 0.4rem;
+  padding: 4.8px 6.4px; }
+
+.room-list__icon-free {
+  background-color: #352168;
+  padding: 0.3rem 0.4rem;
+  padding: 4.8px 6.4px;
+  margin-bottom: 0.4rem;
+  margin-bottom: 6.4px; }
+  .room-list__icon-free svg {
+    width: 20px;
+    margin-right: 0.3rem;
+    margin-right: 4.8px; }
+
+.timer-block {
+  position: relative;
+  margin: 2rem 1rem 1rem;
+  margin: 32px 16px 16px;
+  padding: 0.1rem;
+  padding: 1.6px;
+  background: #352168;
+  background: -webkit-linear-gradient(left, #352168 0%, #b277cf 100%);
+  background: -o-linear-gradient(left, #352168 0%, #b277cf 100%);
+  background: linear-gradient(to right, #352168 0%, #b277cf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#352168', endColorstr='#b277cf',GradientType=1 );
+  -webkit-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.36);
+  z-index: 100; }
+  .timer-block h1 {
+    color: #fff;
+    font-weight: 300; }
+
+@media only screen and (min-width: 900px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .room-filter {
+    margin-top: 0; }
+  .room-list {
+    grid-template-columns: 1fr 1fr; } }
+
+.room-list__two-collumn {
+  position: relative; }
+
+.subscribe-form {
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  background-color: #352168;
+  padding: 0.2rem 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; }
+  .subscribe-form label {
+    padding-top: 2px;
+    font-family: 'Brando Sans Text'; }
+
+input {
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 1px solid #fff;
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: 0;
+  transition: all 0.3s;
+  overflow: hidden; }
+
+input:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 10px;
+  width: 10px;
+  transform: translateY(-12px);
+  opacity: 0;
+  transition: all 0.2s ease; }
+
+input[type='checkbox'] {
+  margin: 0 0 0 8px; }
+
+input:checked {
+  border-color: #fff; }
+
+input:checked:before {
+  opacity: 1;
+  transform: translateY(0);
+  background-color: #fff; }

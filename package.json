@@ -1,0 +1,56 @@
+{
+  "name": "mirabeau-meeting-rooms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --write \"server/**/*.js\"",
+    "xo": "xo",
+    "sass": "node_modules/.bin/node-sass --include-path scss server/scss/main.scss server/public/css/main.css",
+    "sass-watch": "node_modules/.bin/nodemon -e scss -x npm run sass",
+    "server": "node_modules/.bin/nodemon server/index.js",
+    "watch": "npm run server & npm run sass-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchGoudkuil/mirabeau-meeting-rooms.git"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "xo": {
+    "extends": [
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "author": "Dennis Wegereef, Mitch Goudkuil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MitchGoudkuil/mirabeau-meeting-rooms/issues"
+  },
+  "homepage": "https://github.com/MitchGoudkuil/mirabeau-meeting-rooms#readme",
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "dotenv": "^7.0.0",
+    "liveserver": "^0.1.20",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "xo": "^0.24.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "laggard": "^2.0.1",
+    "web-push": "^3.3.3"
+  }
+}
